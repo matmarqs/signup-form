@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* bg-ratio = width/height of the background */
+  --bg-ratio: calc(5304/7952);
+  /* logo-ratio = width/height of the background */
+  --logo-ratio: calc(376/468);
+}
+
+body {
+  font-family: Roboto, monospace;
+  margin: 0;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px;
+  background-image: url("./fig/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: calc(100vh * --ratio);
+  align-items: center;
+}
+
+#semitransparent {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 200px;
+  height: auto;
+}
+
+#header {
+  font-size: 64px;
+  color: white;
+}
