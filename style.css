@@ -16,16 +16,11 @@
 }
 
 body {
+  display: flex;
   font-family: Roboto, monospace;
   margin: 0;
   font-size: 16px;
   height: 100vh;
-  display: flex;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
 }
 
 #side {
@@ -61,4 +56,61 @@ body {
   font-family: cybrpnuk;
   font-size: 64px;
   color: whitesmoke;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+#intro {
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+
+#form_container {
+  display: flex;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fieldset {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 64px;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  width: 160px;
+}
+
+#data {
+  padding: 32px 64px;
+  box-shadow: 5px 2px 2px grey;
+  background-color: white;
+}
+
+#account {
+  margin-top: 32px;
+  margin-left: 64px;
 }
